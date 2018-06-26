@@ -21,6 +21,7 @@ public class HairSalon {
     // EFFECTS:  books the customer into the requested timeslot
     public void makeNewBooking(Customer c, int bookingTime){
         System.out.println("Customer " + c.getName() + " has been booked at " + bookingTime);
+        bookings.set(bookingTime, c);
     }
 
     // EFFECTS: prints out all the bookings.  If the time has not been booked, prints "available"
